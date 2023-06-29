@@ -39,17 +39,16 @@
 			this.flexLayoutPanel.LayoutStyle = Wisej.Web.FlexLayoutStyle.Vertical;
 			this.flexLayoutPanel.Location = new System.Drawing.Point(58, 38);
 			this.flexLayoutPanel.Name = "flexLayoutPanel";
-			this.flexLayoutPanel.Size = new System.Drawing.Size(431, 424);
+			this.flexLayoutPanel.Size = new System.Drawing.Size(431, 265);
 			this.flexLayoutPanel.TabIndex = 0;
 			// 
 			// MainWindow
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
 			this.AutoScaleMode = Wisej.Web.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(548, 501);
+			this.ClientSize = new System.Drawing.Size(548, 342);
 			this.CloseBox = false;
 			this.Controls.Add(this.flexLayoutPanel);
-			this.IconSource = "window-icon";
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "MainWindow";
