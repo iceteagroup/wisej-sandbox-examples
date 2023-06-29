@@ -8,5 +8,10 @@
 		"name": "3D Viewer",
 		"documentation": "https://docs.wisej.com/docs",
 		"path": "Wisej.SAP3DViewer/Wisej.SAP3DViewer"
+	},
+	{
+		"name": "Real-Time Data",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Wisej.RealTimeMarket"
 	}
 ]

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.GettingStarted", "Wis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.SAP3DViewer", "Wisej.SAP3DViewer\Wisej.SAP3DViewer\Wisej.SAP3DViewer.csproj", "{46B8694E-400B-4643-804F-3D312824BF92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisej.RealTimeMarket", "Wisej.RealTimeMarket\Wisej.RealTimeMarket.csproj", "{D62B5577-BBB0-47D4-8253-14067FCE2762}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{46B8694E-400B-4643-804F-3D312824BF92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46B8694E-400B-4643-804F-3D312824BF92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46B8694E-400B-4643-804F-3D312824BF92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62B5577-BBB0-47D4-8253-14067FCE2762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62B5577-BBB0-47D4-8253-14067FCE2762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62B5577-BBB0-47D4-8253-14067FCE2762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62B5577-BBB0-47D4-8253-14067FCE2762}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
