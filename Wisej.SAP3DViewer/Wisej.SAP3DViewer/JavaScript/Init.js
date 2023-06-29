@@ -64,6 +64,7 @@ this.init = function () {
         // Renderer
         oDvl.Core.InitRenderer();
         oDvl.Renderer.SetDimensions(me.getWidth(), me.getHeight());
+        debugger;
         oDvl.Renderer.SetBackgroundColor(0.2, 0.2, 0.2, 1, 0.8, 0.8, 0.8, 1);
 
         oDvl.Renderer.SetOptionF(sap.ve.dvl.DVLRENDEROPTIONF.DVLRENDEROPTIONF_DPI, 96 * devicePixelRatio);

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.GettingStarted", "Wisej.GettingStarted\Wisej.GettingStarted.csproj", "{A75749BA-649C-4A05-8AFE-C70F2373DE46}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.ImageClassification", "Wisej.ImageClassification\Wisej.ImageClassification.csproj", "{46B8694E-400B-4643-804F-3D312824BF92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wisej.SAP3DViewer", "Wisej.SAP3DViewer\Wisej.SAP3DViewer\Wisej.SAP3DViewer.csproj", "{46B8694E-400B-4643-804F-3D312824BF92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,7 +10,7 @@ namespace Wisej.SAP3DViewer
 		/// </summary>
 		static void Main()
 		{
-			Application.MainPage = new Page1();
+			new MainForm().ShowDialog();
 		}
 
 		//
