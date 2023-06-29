@@ -10,7 +10,7 @@ namespace Wisej.GettingStarted
 		/// </summary>
 		static void Main()
 		{
-			new MainWindow().Show();
+			new MainWindow().ShowDialog();
 		}
 
 		//
