@@ -49,6 +49,7 @@
 			this.ClientSize = new System.Drawing.Size(548, 342);
 			this.CloseBox = false;
 			this.Controls.Add(this.flexLayoutPanel);
+			this.KeepOnScreen = true;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "MainWindow";
