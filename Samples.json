@@ -2,16 +2,6 @@
   {
 		"name": "Getting Started",
 		"documentation": "https://docs.wisej.com/docs",
-		"path": ""
-	},
-  {
-		"name": "ChatGPT",
-		"documentation": "https://docs.wisej.com/docs",
-		"path": ""
-	},
-  {
-    "name": ML.NET,
-    "documentation": "https://docs.wisej.com/docs",
-    "path": ""
+		"path": "Wisej.GettingStarted"
   }
 ]
