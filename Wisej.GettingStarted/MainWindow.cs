@@ -17,7 +17,7 @@ namespace Wisej.GettingStarted
 		private void Window1_Load(object sender, EventArgs e)
 		{
 			// create a new TextBox with a label.
-			var textBox = new TextBox { LabelText = "Enter your email" };
+			var textBox = new TextBox { LabelText = "Enter your name" };
 
 			// create a new Button with some text.
 			var button = new Button { Text = "Sign up" };
