@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			Wisej.Core.FileSystemProvider fileSystemProvider2 = new Wisej.Core.FileSystemProvider();
+			Wisej.Core.FileSystemProvider fileSystemProvider1 = new Wisej.Core.FileSystemProvider();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.openFileDialog = new Wisej.Web.OpenFileDialog(this.components);
 			this.comboBoxProcedures = new Wisej.Web.ComboBox();
@@ -44,18 +44,18 @@
 			// 
 			this.openFileDialog.Filter = "VDS (*.vds)|*.vds|All files (*.*)|*.*";
 			this.openFileDialog.InitialDirectory = "Project Files";
-			fileSystemProvider2.Name = "Project Files";
-			fileSystemProvider2.Root = "~\\Samples\\";
-			this.openFileDialog.Roots.Add(fileSystemProvider2);
+			fileSystemProvider1.Name = "Project Files";
+			fileSystemProvider1.Root = "~\\Samples\\";
+			this.openFileDialog.Roots.Add(fileSystemProvider1);
 			this.openFileDialog.Title = "Select a VDS file.";
 			// 
-			// comboBoxSteps
+			// comboBoxProcedures
 			// 
 			this.comboBoxProcedures.Anchor = Wisej.Web.AnchorStyles.None;
 			this.comboBoxProcedures.DisplayMember = "name";
 			this.comboBoxProcedures.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBoxProcedures.Location = new System.Drawing.Point(44, 37);
-			this.comboBoxProcedures.Name = "comboBoxSteps";
+			this.comboBoxProcedures.Name = "comboBoxProcedures";
 			this.comboBoxProcedures.Size = new System.Drawing.Size(510, 30);
 			this.comboBoxProcedures.TabIndex = 2;
 			this.comboBoxProcedures.ValueMember = "id";
@@ -74,13 +74,13 @@
 			this.buttonPlay.Text = "Play";
 			this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
 			// 
-			// comboBox2
+			// comboBoxSteps
 			// 
 			this.comboBoxSteps.Anchor = Wisej.Web.AnchorStyles.None;
 			this.comboBoxSteps.DisplayMember = "name";
 			this.comboBoxSteps.DropDownStyle = Wisej.Web.ComboBoxStyle.DropDownList;
 			this.comboBoxSteps.Location = new System.Drawing.Point(44, 98);
-			this.comboBoxSteps.Name = "comboBox2";
+			this.comboBoxSteps.Name = "comboBoxSteps";
 			this.comboBoxSteps.Size = new System.Drawing.Size(445, 30);
 			this.comboBoxSteps.TabIndex = 4;
 			this.comboBoxSteps.ValueMember = "id";
@@ -109,7 +109,6 @@
 			this.vdsViewer.Size = new System.Drawing.Size(598, 359);
 			this.vdsViewer.TabIndex = 0;
 			this.vdsViewer.Text = "widget1";
-			this.vdsViewer.WebRequest += new Wisej.Web.WebRequestHandler(this.vdsViewer_WebRequest);
 			this.vdsViewer.WidgetEvent += new Wisej.Web.WidgetEventHandler(this.vdsViewer_WidgetEvent);
 			// 
 			// MainForm
@@ -128,7 +127,7 @@
 			this.ResponsiveProfiles.Add(((Wisej.Base.ResponsiveProfile)(resources.GetObject("$this.ResponsiveProfiles1"))));
 			this.StartPosition = Wisej.Web.FormStartPosition.CenterScreen;
 			this.Text = "SAP 3D Viewer - Pocket Knife";
-			this.Appear += new System.EventHandler(this.MainForm_Appear);
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.ResumeLayout(false);

@@ -11,15 +11,9 @@ namespace Wisej.SAP3DViewer
 			InitializeComponent();
 		}
 
-		private void vdsViewer_WebRequest(object sender, WebRequestEventArgs e)
+		private void MainForm_Load(object sender, EventArgs e)
 		{
-			// Wisej.Web.Widget is able to act as a request handler and return any content.
-			switch (e.Request["action"])
-			{
-				case "load":
-					e.Response.TransmitFile(Application.MapPath("Samples/k.vds"));
-					break;
-			}
+			this.vdsViewer.Source = Application.MapPath("Samples/k.vds");
 		}
 
 		private async void vdsViewer_WidgetEvent(object sender, WidgetEventArgs e)
@@ -38,7 +32,7 @@ namespace Wisej.SAP3DViewer
 					break;
 
 				case "nodeSelected":
-					AlertBox.Show($"Selected Node: {e.Data}");
+					AlertBox.Show($"Selected Node: {e.Data.ToJSON()}");
 					break;
 			}
 		}
@@ -61,12 +55,6 @@ namespace Wisej.SAP3DViewer
 		{
 			if (this.comboBoxSteps.SelectedIndex  > -1)
 				this.vdsViewer.Call("playStep", ((dynamic)this.comboBoxSteps.SelectedItem).id);
-		}
-
-		private void MainForm_Appear(object sender, EventArgs e)
-		{
-			// when the widget appears on the client, load the vds file.
-			this.vdsViewer.Call("loadFile", "*");
 		}
 	}
 }

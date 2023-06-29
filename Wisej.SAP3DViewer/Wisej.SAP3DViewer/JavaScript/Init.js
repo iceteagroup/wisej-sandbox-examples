@@ -84,6 +84,9 @@ this.init = function () {
         // Basic Gesture Handling using the Loco library
         track = new sap.ve.Loco(oDvl, canvas, true);
         track.activeScaleRatio = devicePixelRatio;
+
+        // load the initial file.
+        me.loadFile();
     });
 }
 

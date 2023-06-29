@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Runtime.CompilerServices;
 using Wisej.Web;
 
@@ -7,6 +8,45 @@ namespace Wisej.SAP3DViewer
 {
 	public class VdsViewer : Widget
 	{
+
+		#region Constructor
+
+		/// <summary>
+		/// Creates a new instance of <see cref="VdsViewer"/>.
+		/// </summary>
+		public VdsViewer() : base()
+		{
+			this.WebRequest += new WebRequestHandler(this.VdsViewer_WebRequest);
+		}
+
+		#endregion
+
+		#region Properties
+
+		/// <summary>
+		/// Gets or sets the VDS file source.
+		/// </summary>
+		public string Source 
+		{
+			get
+			{
+				return this._source;
+			}
+			set
+			{
+				if (this._source != value) 
+				{
+					this._source = value;
+
+					this.Call("loadFile");
+				}
+			}
+		}
+		private string _source;
+
+		#endregion
+
+		#region Wisej.NET Implementation
 
 		[Browsable(false)]
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -47,5 +87,19 @@ namespace Wisej.SAP3DViewer
 				return base.Packages;
 			}
 		}
+
+		private void VdsViewer_WebRequest(object sender, WebRequestEventArgs e)
+		{
+			// Wisej.Web.Widget is able to act as a request handler and return any content.
+			switch (e.Request["action"])
+			{
+				case "load":
+					e.Response.TransmitFile(this.Source);
+					break;
+			}
+		}
+
+		#endregion
+
 	}
 }
