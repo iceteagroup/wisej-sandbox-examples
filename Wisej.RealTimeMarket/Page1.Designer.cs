@@ -73,7 +73,7 @@
 			this.Controls.Add(this.flowLayoutPanelSymbols);
 			this.Name = "Page1";
 			this.Size = new System.Drawing.Size(1808, 804);
-			this.Appear += new System.EventHandler(this.Page1_Appear);
+			this.Load += new System.EventHandler(this.Page1_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

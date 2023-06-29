@@ -10,6 +10,17 @@ namespace Wisej.RealTimeMarket
 			InitializeComponent();
 		}
 
+		private void Page1_Load(object sender, System.EventArgs e)
+		{
+			AddTicker("AAPL");
+			AddTicker("TSLA");
+			AddTicker("AI");
+			AddTicker("AMZN");
+			AddTicker("MSFT");
+			AddTicker("BINANCE:BTCUSDT");
+			AddTicker("BINANCE:ETHUSDT");
+		}
+
 		private void buttonAdd_Click(object sender, System.EventArgs e)
 		{
 			AddTicker(this.textBoxSymbol.Text);
@@ -20,11 +31,6 @@ namespace Wisej.RealTimeMarket
 		private void AddTicker(string symbol)
 		{
 			this.flowLayoutPanelSymbols.Controls.Add(new Ticker(symbol));
-		}
-
-		private void Page1_Appear(object sender, System.EventArgs e)
-		{
-			AddTicker("AAPL");
 		}
 	}
 }
