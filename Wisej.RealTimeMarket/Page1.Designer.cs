@@ -41,15 +41,15 @@
 			this.flowLayoutPanelSymbols.AutoScroll = true;
 			this.flowLayoutPanelSymbols.AutoScrollMargin = new System.Drawing.Size(0, 20);
 			this.flowLayoutPanelSymbols.BorderStyle = Wisej.Web.BorderStyle.Solid;
-			this.flowLayoutPanelSymbols.Location = new System.Drawing.Point(187, 182);
+			this.flowLayoutPanelSymbols.Location = new System.Drawing.Point(59, 182);
 			this.flowLayoutPanelSymbols.Name = "flowLayoutPanelSymbols";
 			this.flowLayoutPanelSymbols.Padding = new Wisej.Web.Padding(8);
-			this.flowLayoutPanelSymbols.Size = new System.Drawing.Size(1435, 487);
+			this.flowLayoutPanelSymbols.Size = new System.Drawing.Size(1705, 487);
 			this.flowLayoutPanelSymbols.TabIndex = 0;
 			// 
 			// textBoxSymbol
 			// 
-			this.textBoxSymbol.Location = new System.Drawing.Point(187, 146);
+			this.textBoxSymbol.Location = new System.Drawing.Point(59, 135);
 			this.textBoxSymbol.Name = "textBoxSymbol";
 			this.textBoxSymbol.Size = new System.Drawing.Size(298, 30);
 			this.textBoxSymbol.TabIndex = 1;
@@ -58,7 +58,7 @@
 			// buttonAdd
 			// 
 			this.buttonAdd.ImageSource = "table-row-new";
-			this.buttonAdd.Location = new System.Drawing.Point(500, 146);
+			this.buttonAdd.Location = new System.Drawing.Point(372, 135);
 			this.buttonAdd.Name = "buttonAdd";
 			this.buttonAdd.Size = new System.Drawing.Size(31, 30);
 			this.buttonAdd.TabIndex = 2;

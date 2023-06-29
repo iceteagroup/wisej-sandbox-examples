@@ -90,10 +90,13 @@
 			// 
 			// labelSymbol
 			// 
+			this.labelSymbol.Anchor = ((Wisej.Web.AnchorStyles)(((Wisej.Web.AnchorStyles.Top | Wisej.Web.AnchorStyles.Left) 
+            | Wisej.Web.AnchorStyles.Right)));
+			this.labelSymbol.AutoEllipsis = true;
 			this.labelSymbol.Font = new System.Drawing.Font("@windowTitle", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
 			this.labelSymbol.Location = new System.Drawing.Point(15, 18);
 			this.labelSymbol.Name = "labelSymbol";
-			this.labelSymbol.Size = new System.Drawing.Size(118, 25);
+			this.labelSymbol.Size = new System.Drawing.Size(270, 25);
 			this.labelSymbol.TabIndex = 1;
 			this.labelSymbol.Text = "NA";
 			// 
