@@ -1,7 +1,12 @@
 [
-  {
+	{
 		"name": "Getting Started",
 		"documentation": "https://docs.wisej.com/docs",
 		"path": "Wisej.GettingStarted"
-  }
+	},
+	{
+		"name": "3D Viewer",
+		"documentation": "https://docs.wisej.com/docs",
+		"path": "Wisej.SAP3DViewer"
+	}
 ]
